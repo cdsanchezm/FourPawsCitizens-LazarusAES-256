@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.24/datatables.min.css" />
+
+    <link href="Style/inicio.css" rel="Stylesheet" type="text/css">
+
+
+</head>
+<body>
+
+    <div id="formAdd" class="container">
+        <form class=" formAddPet row g-3" id="formadd">
+
+            <div class="formImage col-md-6" id="sing">
+                <img src="img/Sign Up.png " alt="logoForm " height="29px " width="61px ">
+            </div>
+            <div class="col-md-6" id="fpc">
+              <p>FourPawsCitiziens</p>
+            </div>
+
+            <div class="col-md-12" id="logopet">
+                <img src="img/Group 6.png" alt="logoForm " height="44px " width="78px ">
+            </div>
+           
+            <div class="col-md-10">
+                <label for="validationServer01 " class="UserName">UserName</label>
+                <input type="text "  class="form-control " size="5" id="addmicroship" required>
+            </div>
+            <div class="col-md-10">
+                <label for="validationServer01 " class="Password">Password</label>
+                <input type="text " class="form-control " id="addmicroship" required>
+            </div>
+            <div class="col-md-10">
+                <label for="validationServer01 " class="form-label ">Repeat Password</label>
+                <input type="text " class="form-control " id="addmicroship" required>
+            </div>
+            <div class="col-md-10">
+                <label for="validationServer01 " class="Mail">Mail</label>
+                <input type="text "class="form-control " id="addmicroship" required>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio"name="flexRadioDefault" id="flexCheckDefault1">
+                <label class="form-check-label" for="flexRadioDefault1" id="form-check-label1">
+                  Propietario
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexCheckChecked2" >
+                <label class="form-check-label" for=flexRadioDefault2" id="form-check-label2">
+                  Veterinario
+                </label>
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault"id="flexCheckChecked3">
+                <label class="form-check-label" for="flexRadioDefaul3" id="form-check-label3">
+                  Funcionario
+                </label>
+              </div>
+
+          
+            <div class="button col-md-10">
+                <button type="submit" class="btn btn-primary" id="buttonsave"
+                    style="margin-top: 5px;">Crear Cuenta</button>
+            </div>
+
+           
+        </form>
+    </div>
+
+</body>
+</html>
