@@ -3,18 +3,17 @@
 body{
   font-family: 'Poppins', sans-serif !important;
   text-align: center;
-  background-image: url(Rectangle\ 41.png);
-  background-color: #E5E5E5;
+  background-image: url(/img/Rectangle3.png);
   background-repeat: no-repeat; 
   
 } 
 
 .container{
   width: 370px;
-  height: 640px;
+  height: 550px;
   left: 456px;
   top: 59px;
-  margin-top: 4%;
+  margin-top: 2%;
   background: #FFFFFF;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 18.5365px;
@@ -43,7 +42,6 @@ body{
   line-height: 17px;
 }
 .UserName{
-  margin-right: 50%;
   font-style: normal;
   font-weight: normal;
   line-height: 17px;
@@ -122,4 +120,6 @@ body{
 }
 
 
-
+.navbar-color {
+  background-color: rgba(255, 255, 255,0.5)!important;
+}
