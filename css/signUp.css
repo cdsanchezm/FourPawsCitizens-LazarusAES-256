@@ -34,7 +34,6 @@ body {
 }
 
 
-
 .signUpform {
 
     margin: auto;
@@ -47,6 +46,10 @@ body {
     border-radius: 18.5365px;
 }
 
+
+#form-check-label1{
+    font-size: 1px;
+}
 .signUpform label {
     text-align: left !important;
 
