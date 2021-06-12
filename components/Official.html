@@ -16,23 +16,35 @@
 <body>
 
 
-<div class="container contenedor">
-  <div class="row">
-      <div class="col-6" style="margin-top: 30px !important;"> 
-            <img class="logo-O" src="/img/Official-f.png" alt="Official-logo">
-      </div>
-    
-      <div class="col-6">
-            <button type="submit" class="btn" style="margin-left: 85%; margin-top: 35px;">LogOut</button>
-      </div>
+<!-- menu -->
+<nav class="navbar navbar-expand-lg navbar-light navbar-color">
+    <div class="container">
+        <a class="navbar-brand" href="/components/index.html"><img class="logo-O" style="margin-top: 35px;" src="/img/Official-f.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="d-flex align-items-center">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav d-flex align-items-center">
+                  
+                    <a class="nav-link active" href="/components/index.html#purpose">Log out</a>
+
+                </div>
+            </div>
+        </div>
+</nav>
+
+<!-- fin menu -->
       
       
   </div>
 
 </div>
 
-    <div class="container mt-3 mb-3  " style="background-color: white; border-radius: 5px;">
-        <div class="table-responsive" style="margin-top: 250px;">
+    <div class="container" style="background-color: white; border-radius: 5px; width: 55%; margin-left: 35%;">
+        <div class="table-responsive" style="margin-top: 10px;">
             <br>
         <div class="row">
             <div class="col-12 col-sm-12 col-lg-12">
@@ -50,29 +62,8 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <th>Pet-id</th>
-                            <th>Microchip</th>
-                            <th>Name</th>
-                            <th>Species</th>
-                            <th>Race</th>
-                            <th>Size</th>
-                            <th>Sex</th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <th>Pet-id</th>
-                            <th>Microchip</th>
-                            <th>Name</th>
-                            <th>Species</th>
-                            <th>Race</th>
-                            <th>Size</th>
-                            <th>Sex</th>
-                            <th></th>
-                        </tr>
-                    </tbody>
+                                      
+              </tbody>
                 </table>
 
             </div>
@@ -82,6 +73,37 @@
     </div>
     <br>
 </div>
+
+
+<div class="container" style="background-color: white; border-radius: 5px; width: 55%; margin-left: 35%;">
+    <div class="table-responsive" style="margin-top: 200px;">
+        <br>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-lg-12">
+            <table id="table1" class="display dataTable" style="width: 80%;">
+                <thead>
+                    <tr>
+                        <th>Owner-id</th>
+                        <th>Pet-id</th>
+                        <th>Neighborhod</th>
+                        <th>Address</th>
+                        <th>Microchip</th>
+                    </tr>
+                </thead>
+                <tbody>
+                                  
+          </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+<br>
+</div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">  
