@@ -22,55 +22,21 @@ body{
     border-radius: 15px;
 }
 
-#formAdd {
-    position: absolute;
-    width: 40rem;
-    height: auto;
-    z-index: 1;
-    position: absolute;
-    top: 15%;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.buttonWhite {
+    text-align: center;
+    background-color: white !important;
+    border: none !important;
+    width: 150px;
+    height: 50px;
     margin: auto;
-    display: none;
+    color: black !important;
+    border-radius: 15px;
 }
 
-.formAddPet {
-    width: 50%;
-    padding: 25px;
+.tablaPet {
     background-color: white;
-    border-radius: 20px;
-    -webkit-box-shadow: -1px 8px 20px -2px rgba(0, 0, 0, 0.55);
-    box-shadow: -1px 8px 20px -2px rgba(0, 0, 0, 0.55);
-}
-
-
-div.appear {
-    opacity: 1%;
-    display: block !important;
-}
-
-.grayBg {
-    width: 100%;
-    height: 100%;
-    background-color: aqua;
-}
-
-@media screen and (max-width: 862px) {
-    .formAddPet {
-        width: 35rem;
-    }
-}
-
-.Button-edit {
-    align-items: flex-end;
-    @media screen and (max-width: 1284px) {
-        .formAddPet {
-            width: 35rem;
-        }
-        #cr-form {
-            margin-left: 30%;
-        }
-    }
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 28px -5px rgba(0,0,0,0.36); 
+box-shadow: 0px 0px 28px -5px rgba(0,0,0,0.36);
 }
