@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,29 +12,32 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Menu Principal-->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-color">
-        <div class="container">
-            <a class="navbar-brand"><img class="logo-O" style="margin-top: 35px;" src="/img/logoOwner.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    <!--Botones para crear la mascota y salir a la pagina publica-->
-            <div class="d-flex align-items-center">
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav d-flex align-items-center">
-                        <a class="nav-link"><button data-bs-toggle="modal" data-bs-target="#modalCrearMascota"
-                            class="buttonOrange">Crear Mascota</button></a>
-                            <a class="nav-link active"><button data-bs-toggle="modal" data-bs-target="#modalLogOut"
-                                class="buttonWhite">Log out</button></a>
-    
-                    </div>
+   <!-- menu -->
+   <nav class="navbar navbar-expand-lg navbar-light navbar-color">
+    <div class="container">
+        <a class="navbar-brand"><img src="/img/logoOwner.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="d-flex align-items-center">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav d-flex align-items-center">
+                    <a class="nav-link"><button data-bs-toggle="modal" data-bs-target="#modalCrearMascota"
+                        class="buttonOrange">Crear Mascota</button></a>
+                    <a class="nav-link active"><button data-bs-toggle="modal" data-bs-target="#modalLogOut"
+                            class="buttonWhite">Log out</button></a>
                 </div>
             </div>
-    <!--Fin de los botones-->        
-    </nav>
-<!-- fin del menu principal-->
+        </div>
+</nav>
+
+<!-- fin menu -->
+
+
+
+
 <!--Inicio del formulario de crear mascota-->
     <div class="modal fade" id="modalCrearMascota" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -130,13 +133,11 @@
 <!--Fin del modal-->
 
 <!-- Inicio de la tabla-->
-    <h2>Tabla de Mascotas</h2>
+    <h3 class="text-center">Tabla Mascotas</h3>
 
-    <br></br>
-
-    <div class="container tablaPet">
+    <div class="container tablaOwner">
         <div class="row">
-            <table id="tablaVet" class="display" style="width:100%">
+            <table id="tablaPet" class="display" style="width:100%">
                 <thead>
                     <tr>
                         <th>pet_id</th>
@@ -173,6 +174,45 @@
 
 <!--Fin de la tabla-->
 
+<br><br>
+
+<h3 class="text-center">Tabla de datos</h3>
+
+<!-- tabla datos -->
+
+
+<div class="container tablaOwner">
+    <div class="row">
+        <table id="dataTable" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>case_id</th>
+                    <th>fech. creación</th>
+                    <th>Tipo</th>
+                    <th>descripción</th>
+                    <th>pet_id</th>
+            
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10</td>
+                    <td>2020/02/21</td> 
+                    <td>Esterilización</td>
+                    <td>Le quitaron las bolitas</td>
+                    <td>785964</td>
+                </tr>
+                
+        </table>
+    </div>
+</div>
+
+
+
+<!-- fin tabla datos -->
+
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -180,7 +220,7 @@
     </script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.25/datatables.min.js"></script>
-    <script src="/js/vet.js"></script>
+    <script src="/js/owner.js"></script>
     
 </body>
 </html>

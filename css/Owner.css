@@ -1,15 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 body{
     font-family: 'Poppins', sans-serif !important;
-    text-align: center;
     background-image: url(/img/Ellipse\ 22.png);
     background-repeat: no-repeat;
 
-}
+} 
 
-.logo-O {
-    margin-right: 100%;
-    margin-left: -20%;
-}
 
 .buttonOrange {
     text-align: center;
@@ -33,7 +29,7 @@ body{
     border-radius: 15px;
 }
 
-.tablaPet {
+.tablaOwner {
     background-color: white;
     padding: 10px;
     border-radius: 10px;
