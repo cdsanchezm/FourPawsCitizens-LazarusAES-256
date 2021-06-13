@@ -1,40 +1,17 @@
 
-var pr = 0;
-function formularios(){
-    if(document.getElementById('inlineRadio1').checked)
-    {
-        pr=1;
-    }
-    else if (document.getElementById('inlineRadio2').checked) {
-        pr=2;
-    }
-    else if (document.getElementById('inlineRadio3').checked) {
-        pr = 3;
-       
-    }else {
-        alert("es tan amable de escoger una opcion imbecil");
-    }   
-}
 
+console.log('funciona');
+var formulario = document.getElementById('formSing');
+var radioB1 = document.getElementById('inlineRadio1');
+var radioB2 = document.getElementById('inlineRadio2');
+var radioB3 = document.getElementById('inlineRadio3');
 
-    formularios();
-
-    if(pr == 1){
-        document.getElementById('buttonN').addEventListener("click", () => {
-            
-            location = ("/components/Property.html");
-          
-    }); 
-    }else if(pr == 2){
-        document.getElementById('buttonN').addEventListener("click", () => {
-         alert("funciono");
-        location = ("/components/VeterinatiS.html");
-    }); 
-    }else if(pr == 3){
-        document.getElementById('buttonN').addEventListener("click", () => {
-             alert("funciono");
-            location = ("/components/OfficialF.html");
-          
-    }); 
-    
-    }
+formulario.addEventListener('submit', function(e){
+        e.preventDefault();
+        var data = new FormData(formulario);
+        console.log(data.get('userName'));
+        console.log(data.get('password'));
+        console.log(data.get('RepeatPassword'));
+        console.log(data.get('mail'));
+        
+})
