@@ -2,24 +2,12 @@ var formulario = document.getElementById('formSing');
 var RadioB = document.getElementsByName('inlineRadioOptions');
 var RadioV;
 var username;
-var password ;
-var RepeatPassword ;
-var mail ;
-var role;
-var username2;
-var password2;
-var mail2;
-var role2;
 let url = 'http://localhost:8080/FourPawsCitizens-LazarusAES-25-1.0-SNAPSHOT/api/user';
- 
 
 formulario.addEventListener('submit', function(e){
     e.preventDefault();
     var data = new FormData(formulario);
-     username = data.get('userName');
-     password = data.get('password');
-     RepeatPassword = data.get('RepeatPassword');
-     mail = data.get('mail');
+    username = data.get('userName');
 
       for(i=0; i<RadioB.length; i++){
           if(RadioB[i].checked){
