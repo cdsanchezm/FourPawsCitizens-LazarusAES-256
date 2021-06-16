@@ -61,6 +61,7 @@ function validate(response){
   }else{
     alert("El nombre de usuario ya existe, por favor escoja uno nuevo");
     location.reload();
+    console.log("holi");
   }
   
 }
