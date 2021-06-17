@@ -48,28 +48,28 @@
                 </div>
                 <div class="modal-body">
 
-                    <form action="">
+                    <form id="formpet">
 
                         <div class="col-md-12 ">
                             <label for="validationServer01 " class="form-label ">Microchip</label>
-                            <input type="text" class="form-control " id="addmicroship">
+                            <input type="text" class="form-control " name="microchip" id="addmicroship">
                         </div>
             
                         <div class="col-md-12">
                             <label for="validationServer07 " class="form-label ">Pet Name </label>
                             <input type="text " class="form-control"
-                                aria-describedby="validationServer03Feedback " id="addowner" required>
+                                aria-describedby="validationServer03Feedback " name="pname" id="addowner" required>
                         </div>
             
                         <div class="col-md-12">
                             <label for="validationServer03 " class="form-label ">Race</label>
                             <input type="text" class="form-control"
-                                aria-describedby="validationServer03Feedback " id="addrace" required>
+                                aria-describedby="validationServer03Feedback " name="raceP" id="addrace" required>
                         </div>
             
                         <div class="col-md-12">
                             <label for="validationServer4 " class="form-label ">Size</label>
-                            <select class="form-select " aria-describedby="validationServer04Feedback " id="addsize" required>
+                            <select class="form-select " aria-describedby="validationServer04Feedback " name="size" id="addsize" required>
                                 <option selected value="GRANDE">Grande</option>
                                 <option selected value="PEQUEÑO">Pequeño</option>
                                 <option selected value="MINIATURA">Miniatura</option>
@@ -79,14 +79,14 @@
             
                         <div class="col-md-12">
                             <label for="validationServer03 " class="form-label ">Sex</label>
-                            <select class="form-select " aria-describedby="validationServer04Feedback " id="addsex" required>
+                            <select class="form-select " aria-describedby="validationServer04Feedback " name="sexP" id="addsex" required>
                                 <option selected value="MACHO">MACHO</option>
                                 <option selected value="HEMBRA">HEMBRA</option>
                                 <option selected value=" "></option>
                             </select>
                         <div class="col-md-12">
                             <label for="validationServer02 " class="form-label ">Especie</label>
-                            <select class="form-select " aria-describedby="validationServer04Feedback " id="addspecies" required>
+                            <select class="form-select " aria-describedby="validationServer04Feedback " name="EspecieP" id="addspecies" required>
                                 <option selected value="FELINO">FELINO</option>
                                 <option selected value="CANINO">CANINO</option>
                                 <option selected value=" "></option>
@@ -97,7 +97,7 @@
             
                         <div class="col-md-12">
                             <label for="image">Nueva imagen</label>
-                            <input type="file" class="form-control-file" name="image" id="image" style="margin-top: 10px;">
+                            <input type="file" class="form-control-file" name="image" id="image" name="image" style="margin-top: 10px;">
                         </div>
             
                         <div class="modal-footer">
@@ -342,7 +342,7 @@
     </script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.25/datatables.min.js"></script>
-    <script src="/js/owner.js"></script>
+    <script src="/JS/OwnerPage.js"></script>
     
 </body>
 </html>
