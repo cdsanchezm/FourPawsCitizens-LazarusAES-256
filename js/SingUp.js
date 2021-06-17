@@ -18,33 +18,33 @@ formulario.addEventListener('submit', function(e){
       if(data.get('password') == data.get('RepeatPassword')){
         fetch(url, {
           method: 'POST',
-          
-          
+
+
           body: JSON.stringify({
             "username":data.get('userName'),
             "password":data.get('password'),
             "email":data.get('mail'),
             "role": RadioV,
-            
+
              }),
-        
+
              headers: {
               'Content-type': 'application/json',
             },
-         
+
         })
-        
+
           .then((response) => response.text())
           .then((json) => {validate(json)});
-        
+
       }else{
-        alert("andres es gay");
+        alert("El nombre de usuario ya existe");
         location.reload();
       }
 
-  
-    
-  
+
+
+
 
 });
 
@@ -58,13 +58,10 @@ function validate(response){
           }else if(response.includes("official")){
             window.location.href = "/components/OfficialF.html"
           }
+        
+
   }else{
     alert("El nombre de usuario ya existe, por favor escoja uno nuevo");
-    location.reload();
-    console.log("holi");
   }
-  
+
 }
-
-
-
