@@ -48,13 +48,84 @@
                 </div>
                 <div class="modal-body">
 
-                    <form action="">
+                    <form id="formpet">
 
                         <div class="col-md-12 ">
                             <label for="validationServer01 " class="form-label ">Microchip</label>
-                            <input type="text " class="form-control " id="addmicroship">
+                            <input type="text" class="form-control " name="microchip" id="addmicroship">
                         </div>
             
+                        <div class="col-md-12">
+                            <label for="validationServer07 " class="form-label ">Pet Name </label>
+                            <input type="text " class="form-control"
+                                aria-describedby="validationServer03Feedback " name="pname" id="addowner" required>
+                        </div>
+            
+                        <div class="col-md-12">
+                            <label for="validationServer03 " class="form-label ">Race</label>
+                            <input type="text" class="form-control"
+                                aria-describedby="validationServer03Feedback " name="raceP" id="addrace" required>
+                        </div>
+            
+                        <div class="col-md-12">
+                            <label for="validationServer4 " class="form-label ">Size</label>
+                            <select class="form-select " aria-describedby="validationServer04Feedback " name="size" id="addsize" required>
+                                <option selected value="GRANDE">Grande</option>
+                                <option selected value="PEQUEÑO">Pequeño</option>
+                                <option selected value="MINIATURA">Miniatura</option>
+                                <option selected value=" "></option>
+                            </select>
+                        </div>
+            
+                        <div class="col-md-12">
+                            <label for="validationServer03 " class="form-label ">Sex</label>
+                            <select class="form-select " aria-describedby="validationServer04Feedback " name="sexP" id="addsex" required>
+                                <option selected value="MACHO">MACHO</option>
+                                <option selected value="HEMBRA">HEMBRA</option>
+                                <option selected value=" "></option>
+                            </select>
+                        <div class="col-md-12">
+                            <label for="validationServer02 " class="form-label ">Especie</label>
+                            <select class="form-select " aria-describedby="validationServer04Feedback " name="EspecieP" id="addspecies" required>
+                                <option selected value="FELINO">FELINO</option>
+                                <option selected value="CANINO">CANINO</option>
+                                <option selected value=" "></option>
+                            </select>
+                        </div>
+                       
+                        </div>
+            
+                        <div class="col-md-12">
+                            <label for="image">Nueva imagen</label>
+                            <input type="file" class="form-control-file" name="image" id="image" name="image" style="margin-top: 10px;">
+                        </div>
+            
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="submit" class="btn btn-primary">Crear</button>
+                        </div>
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Fin del formulario de crear mascota-->
+
+
+<!-- Form Edit Pet-->
+
+    <div class="modal fade" id="modalEditarMascota" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Editar Mascota</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="">
+    
                         <div class="col-md-12">
                             <label for="validationServer07 " class="form-label ">Pet Name </label>
                             <input type="text " class="form-control"
@@ -99,10 +170,11 @@
                             <label for="image">Nueva imagen</label>
                             <input type="file" class="form-control-file" name="image" id="image" style="margin-top: 10px;">
                         </div>
+
             
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                            <button type="submit" class="btn btn-primary">Crear</button>
+                            <button type="submit" class="btn btn-primary">Actualizar</button>
                         </div>
                     
                     </form>
@@ -110,9 +182,59 @@
             </div>
         </div>
     </div>
-<!--Fin del formulario de crear mascota-->
+<!-- end form edit pet-->
 
-<!--inicio del modal para cerrar secion-->
+<!--Form create case-->
+
+<div class="modal fade" id="modalCrearCaso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Crear Caso</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form action="">
+
+                    <div class="col-md-12">
+                        <label for="validationServer07 " class="form-label ">Fecha actual </label>
+                        <input type="date" class="form-control"
+                        aria-describedby="validationServer03Feedback " id="addowner" required>
+                    </div>
+        
+                    <div class="col-md-12">
+                        <label for="validationServer4 " class="form-label ">Tipo</label>
+                        <select class="form-select " aria-describedby="validationServer04Feedback " id="addsize" required>
+                            <option selected value="Perdia">Perdida</option>
+                            <option selected value="Robo">Robo</option>
+                            <option selected value="Fallecimiento">Fallecimiento</option>
+                            <option selected value=" "></option>
+                        </select>
+                    </div>
+        
+                    <div class="col-md-12">
+                        <label for="validationServer03 " class="form-label ">Descripción</label>
+                        <textarea class="form-control" id="description" rows="3" required></textarea>
+                    </div>
+        
+                    
+
+        
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-primary">Crear</button>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--inicio del modal para cerrar sesion-->
     <div class="modal fade" id="modalLogOut" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -218,7 +340,7 @@
     </script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.25/datatables.min.js"></script>
-    <script src="/js/owner.js"></script>
+    <script src="/JS/OwnerPage.js"></script>
     
 </body>
 </html>
