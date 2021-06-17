@@ -51,6 +51,7 @@ formulario.addEventListener('submit', function(e){
 
 function validate(response){
   if(response.includes("ha sido creado")){
+    sessionStorage.setItem("username", username)
           if(response.includes("owner")){
            window.location.href = "/components/Property.html"
           }else if(response.includes("vet")){
