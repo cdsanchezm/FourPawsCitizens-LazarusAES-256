@@ -17,8 +17,6 @@ console.log(owner_id);
    
   fetch(urlO, {
     method: 'POST',
-          
-          
     body: JSON.stringify({
 
       "username":usernameOwner,
