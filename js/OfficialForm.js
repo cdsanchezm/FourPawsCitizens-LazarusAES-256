@@ -35,12 +35,11 @@ if (usernameOfficial != null) {
 //Funcion que lo lleva a la pagina publica
  
 function validate_Owner2 (response){
-  if(response == "owner"){
+  if(response == "The Official was successfully saved"){
     alert("su Registro a sido exitoso");
     window.location.href = "/components/official.html"
   }else{
     alert("a ocurrido un problema, porfavor verifique su informacion");
-    location.reload();
   }
 }
 
