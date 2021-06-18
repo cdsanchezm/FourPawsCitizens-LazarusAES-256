@@ -33,7 +33,7 @@ if (usernameVet != null) {
 //Funcion que lo lleva a la pagina publica
 
 function validate_vet2 (response){
-if(roleOwner == "vet"){
+if(response == "vet"){
   alert("su Registro a sido exitoso");
   window.location.href = "/components/veterinary.html"
 }else{

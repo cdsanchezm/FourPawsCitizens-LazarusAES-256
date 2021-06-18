@@ -60,7 +60,7 @@ function validate_Owner (response){
 //Funcion que lo lleva a la pagina publica
  
 function validate_Owner2 (response){
-  if(roleOwner == "owner"){
+  if(response == "owner"){
     alert("su Registro a sido exitoso");
     window.location.href = "/components/owner.html"
   }else{
