@@ -3,7 +3,7 @@ var url2 =  "http://localhost:8080/FourPawsCitizens-LazarusAES-25-1.0-SNAPSHOT/a
 var url1 =  "http://localhost:8080/FourPawsCitizens-LazarusAES-25-1.0-SNAPSHOT/api/officials/" + username + "/getOwners"; 
 
 //get data from api for table 1
-fetch(url1)
+fetch(url2)
   .then(response => response.json())
   .then(json =>
     tablaListado=$("#tabla1").DataTable({
@@ -16,8 +16,8 @@ fetch(url1)
             {"data":"race"},
             {"data": "size"},
             {"data": "sex"},
-            { "defaultContent": `<button class = "btn btn-primary" data-bs-toggle="modal" data-bs-target="#editar">Actualizar</button>` },
-            { "defaultContent": `<button class = "btn btn-primary" data-bs-toggle="modal" data-bs-target="#editar">Crear caso</button>` }
+            { "defaultContent": `<button class = "btn buttonBlue" data-bs-toggle="modal" data-bs-target="#modalActualizar">Actualizar</button>` },
+            { "defaultContent": `<button class = "btn buttonGreen" data-bs-toggle="modal" data-bs-target="#modalCrearCaso">Crear caso</button>` }
         ],
         "columnDefs": [ {
           "targets": 8,

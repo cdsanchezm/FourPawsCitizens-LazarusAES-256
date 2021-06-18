@@ -3,7 +3,7 @@ var passwordOwnerp = sessionStorage.getItem("password")
 var emailOwnerp = sessionStorage.getItem("email")
 var roleOwnerp = sessionStorage.getItem("role")
 var urlOwnerp =
-  "http://localhost:8080/FourPawsCitizens-LazarusAES-25-1.0-SNAPSHOT/api/owners/"+usernameVet + "/pets";
+  "http://localhost:8080/FourPawsCitizens-LazarusAES-25-1.0-SNAPSHOT/api/owners/"+usernameOwnerp + "/pets";
 var formpet = document.getElementById('formpet');
 var espercie;
 var es;
