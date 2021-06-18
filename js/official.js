@@ -1,6 +1,6 @@
 var username = sessionStorage.getItem("username")
 var url2 =  "http://localhost:8080/FourPawsCitizens-LazarusAES-25-1.0-SNAPSHOT/api/officials/" + username + "/getOwners"; 
-var url1 =  "http://localhost:8080/FourPawsCitizens-LazarusAES-25-1.0-SNAPSHOT/api/officials/" + username + "/getOwners"; 
+var url1 =  "http://localhost:8080/FourPawsCitizens-LazarusAES-25-1.0-SNAPSHOT/api/officials/" + username + "/getPets"; 
 
 //get data from api for table 2 
 fetch(url1)

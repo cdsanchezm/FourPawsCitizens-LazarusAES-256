@@ -47,7 +47,7 @@ console.log(owner_id);
 
 function validate_Owner (response){
     if(roleOwner == "owner"){
-      window.location.href = "/components/Owner.html"
+      window.location.href = "/components/owner.html"
     }else{
       alert("a ocurrido un problema, porfavor verifique su informacion");
       location.reload();
