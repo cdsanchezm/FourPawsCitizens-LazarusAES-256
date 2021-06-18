@@ -6,6 +6,27 @@ body{
 
 } 
 
+.buttonGreen {
+    text-align: center;
+    background-color: #2ADC26 !important;
+    border: none !important;
+    width: 120px;
+    height: 40px;
+    margin: auto;
+    color: white !important;
+    border-radius: 30px;
+}
+
+.buttonBlue {
+    text-align: center;
+    background-color: #18CAEC !important;
+    border: none !important;
+    width: 100px;
+    height: 40px;
+    margin: auto;
+    color: white !important;
+    border-radius: 30px;
+}
 
 .buttonOrange {
     text-align: center;
