@@ -29,6 +29,18 @@ if (usernameOfficial != null) {
       },
     })
       .then((response) => response.text())
-      .then((json) => console.log(json));
+      .then((json) => validate_Owner2(json));
   });
 }
+//Funcion que lo lleva a la pagina publica
+ 
+function validate_Owner2 (response){
+  if(roleOwner == "owner"){
+    alert("su Registro a sido exitoso");
+    window.location.href = "/components/official.html"
+  }else{
+    alert("a ocurrido un problema, porfavor verifique su informacion");
+    location.reload();
+  }
+}
+

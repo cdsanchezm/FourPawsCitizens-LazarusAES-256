@@ -30,26 +30,12 @@ if (usernameVet != null) {
   })
 }
 
-// funcion que lo lleva a la pagina de owner directamente 
-
-function validate_vet (response){
-  if(roleOwner == "vet"){
-    window.location.href = "/components/veterinary.html"
-  }else{
-    alert("a ocurrido un problema, porfavor verifique su informacion");
-    location.reload();
-  }
-}
-
-//escogan la que les gusta mas
-
-
 //Funcion que lo lleva a la pagina publica
 
 function validate_vet2 (response){
 if(roleOwner == "vet"){
   alert("su Registro a sido exitoso");
-  window.location.href = "/components/index.html"
+  window.location.href = "/components/veterinary.html"
 }else{
   alert("a ocurrido un problema, porfavor verifique su informacion");
   location.reload();

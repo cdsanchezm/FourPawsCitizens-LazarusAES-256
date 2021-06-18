@@ -62,7 +62,7 @@ function validate_Owner (response){
 function validate_Owner2 (response){
   if(roleOwner == "owner"){
     alert("su Registro a sido exitoso");
-    window.location.href = "/components/index.html"
+    window.location.href = "/components/owner.html"
   }else{
     alert("a ocurrido un problema, porfavor verifique su informacion");
     location.reload();

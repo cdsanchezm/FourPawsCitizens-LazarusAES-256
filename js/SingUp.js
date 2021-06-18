@@ -25,24 +25,23 @@ formulario.addEventListener('submit', function(e){
         var headers = new Headers();
 
         headers.append('Content-Type', 'text/json');
-        headers.append('Authorization', 'Basic ' + btoa(username + ":" + password));
     
-            fetch(urlIndex, {
+            fetch(urlIndex+"/"+username, {
                 method: 'GET',
                 headers: headers,
             })
                 .then(response => response.text())
                 .then(response => {
                   console.log(response)
-                  if(response == "owner"||response == "official"||response == "vet"){
-                    alert("Error! el usuario ya existe!")
+                  if(response == "Usuario Creado"){
+                    alert("El nombre de usuario ya existe, por favor cambielo!")
                   }else{
                     sessionStorage.setItem("username", username)
                     sessionStorage.setItem("password", password)
                     sessionStorage.setItem("email", email)
                     sessionStorage.setItem("role", RadioV)
                           if(RadioV == "owner"){
-                           window.location.href = "/components/officialForm.html"
+                           window.location.href = "/components/ownerForm.html"
                           }else if(RadioV == "vet"){
                             window.location.href = "/components/veterinaryForm.html"
                           }else if(RadioV == "official"){
