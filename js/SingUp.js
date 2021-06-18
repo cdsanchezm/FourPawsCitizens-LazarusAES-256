@@ -28,13 +28,13 @@ formulario.addEventListener('submit', function(e){
         sessionStorage.setItem("role", RadioV)
               if(RadioV == "owner"){
                 console.log(RadioV);
-               window.location.href = "/components/Property.html"
+               window.location.href = "/components/officialForm.html"
               }else if(RadioV == "vet"){
                 console.log(RadioV);
-                window.location.href = "/components/VeterinatiS.html"
+                window.location.href = "/components/veterinaryForm.html"
               }else if(RadioV == "official"){
                 console.log(RadioV);
-                window.location.href = "/components/OfficialF.html"
+                window.location.href = "/components/officialForm.html"
                 }
 
               

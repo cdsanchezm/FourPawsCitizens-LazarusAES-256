@@ -5,13 +5,13 @@ var form = document.getElementById("loginForm");
 var user;
 var psw;
 
-var urlIndex = "http://localhost:8080/FourPawsCitizens-LazarusAES-25-1.0-SNAPSHOT/api/owners/" + username;
+var urlIndex = "http://localhost:8080/FourPawsCitizens-LazarusAES-25-1.0-SNAPSHOT/api/user";
 
 
 loginbtn.addEventListener('click', () => {
 
     sessionStorage.setItem('username', username.value);
-    sessionStorage.setItem('psw', password.value);
+    sessionStorage.setItem('password', password.value);
 
     user = sessionStorage.getItem('username');
     psw = sessionStorage.getItem('password');
@@ -19,30 +19,26 @@ loginbtn.addEventListener('click', () => {
     console.log(user);
     console.log(psw);
 
+    var headers = new Headers();
+
+    headers.append('Content-Type', 'text/json');
+    headers.append('Authorization', 'Basic ' + btoa(user + ":" + psw));
+
+        fetch(urlIndex, {
+            method: 'GET',
+            headers: headers,
+        })
+            .then(response => response.text())
+            .then(response => {
+              if(response == "owner"){
+                window.location.href = "/components/owner.html"
+              }else if(response == "official"){
+                window.location.href = "/components/official.html"
+              }else if(response == "vet"){
+                window.location.href = "/components/veterinary.html"
+              }else{
+                alert("Error! el usuario no existe!")
+              }
+            });
 
 })
-
-//se tiene que validar que el usuario exista en la base de datos 
-
-if (user != null) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      var data = new FormData(form);
-  
-      fetch(urlIndex, {
-        method: "POST",
-  
-        body: JSON.stringify({
-          username: user,
-          password: pwd
-        }),
-  
-        headers: {
-          "Content-type": "application/json",
-        },
-      })
-        .then((response) => response.text())
-        .then((json) => console.log(json));
-    });
-  }
-  
